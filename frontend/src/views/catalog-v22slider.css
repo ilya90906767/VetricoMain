@@ -1,0 +1,249 @@
+.catalog-v22slider-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-100);
+}
+.catalog-v22slider-navbar {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+.catalog-v22slider-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.catalog-v22slider-text {
+  color: var(--dl-color-gray-white);
+  width: 100%;
+  height: 100%;
+  font-size: 82px;
+  text-align: center;
+}
+.catalog-v22slider-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fourunits);
+}
+.catalog-v22slider-slider {
+  width: 90%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+.catalog-v22slider-slider-slide {
+  gap: var(--dl-space-space-sixunits);
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-v22slider-slider-slide1 {
+  gap: var(--dl-space-space-sixunits);
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-v22slider-slider-slide2 {
+  gap: var(--dl-space-space-sixunits);
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-v22slider-slider-slide3 {
+  gap: var(--dl-space-space-sixunits);
+  display: flex ;
+  padding: var(--dl-space-space-twounits);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-v22slider-slider-pagination {
+  left: 0px;
+  display: block;
+  position: absolute;
+}
+.catalog-v22slider-slider-pagination-bullet {
+  background-color: var(--dl-color-gray-white);
+}
+.catalog-v22slider-slider-pagination-bullet1 {
+  background-color: white;
+}
+.catalog-v22slider-slider-pagination-bullet2 {
+  background-color: var(--dl-color-gray-white);
+}
+.catalog-v22slider-slider-pagination-bullet3 {
+  background-color: var(--dl-color-gray-white);
+}
+.catalog-v22slider-slider-button-prev {
+  color: var(--dl-color-gray-white);
+  display: block;
+}
+.catalog-v22slider-slider-button-next {
+  color: white;
+  display: block;
+}
+.catalog-v22slider-footer {
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: flex-end;
+}
+.catalog-v22slider-separator {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  margin-left: 0px;
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 4px;
+  margin-right: 0px;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.catalog-v22slider-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.catalog-v22slider-text3 {
+  color: rgb(255, 255, 255);
+}
+@media(max-width: 1600px) {
+  .catalog-v22slider-footer {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+}
+@media(max-width: 1200px) {
+  .catalog-v22slider-slider-slide {
+    gap: var(--dl-space-space-twounits);
+    width: 100%;
+    padding: var(--dl-space-space-twounits);
+  }
+  .catalog-v22slider-slider-slide1 {
+    gap: var(--dl-space-space-twounits);
+    padding: var(--dl-space-space-twounits);
+  }
+  .catalog-v22slider-slider-slide2 {
+    gap: var(--dl-space-space-twounits);
+    padding: var(--dl-space-space-twounits);
+  }
+  .catalog-v22slider-slider-slide3 {
+    gap: var(--dl-space-space-twounits);
+    padding: var(--dl-space-space-twounits);
+  }
+  .catalog-v22slider-footer {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+}
+@media(max-width: 991px) {
+  .catalog-v22slider-footer {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+}
+@media(max-width: 767px) {
+  .catalog-v22slider-footer {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .catalog-v22slider-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .catalog-v22slider-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .catalog-v22slider-text3 {
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .catalog-v22slider-slider-slide {
+    gap: var(--dl-space-space-unit);
+    padding: 0px;
+  }
+  .catalog-v22slider-slider-slide1 {
+    gap: var(--dl-space-space-unit);
+    padding: 0px;
+  }
+  .catalog-v22slider-slider-slide2 {
+    gap: var(--dl-space-space-unit);
+    padding: 0px;
+  }
+  .catalog-v22slider-slider-slide3 {
+    gap: var(--dl-space-space-unit);
+    padding: 0px;
+  }
+  .catalog-v22slider-footer {
+    left: 0px;
+    right: 0px;
+    height: 146px;
+    margin: auto;
+    padding: var(--dl-space-space-unit);
+  }
+  .catalog-v22slider-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .catalog-v22slider-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .catalog-v22slider-text3 {
+    text-align: center;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}

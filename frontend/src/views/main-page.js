@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import BlogPostCard31 from '../components/blog-post-card31'
+import NavbarInteractive from '../components/navbar-interactive'
 import './main-page.css'
 
 const MainPage = (props) => {
@@ -13,69 +13,7 @@ const MainPage = (props) => {
         <meta property="og:title" content="Steep Lumpy Meerkat" />
       </Helmet>
       <div id="main" className="main-page-main">
-        <header data-thq="thq-navbar" className="main-page-navbar-interactive">
-          <a href="#main" className="main-page-link">
-            VETRICO
-          </a>
-          <div data-thq="thq-navbar-nav" className="main-page-desktop-menu">
-            <nav className="main-page-links">
-              <a href="#catalog" className="main-page-link01">
-                Каталог
-              </a>
-              <a href="#workshop" className="main-page-link02">
-                Мастерская
-              </a>
-              <a href="#news" className="main-page-link03">
-                Новости
-              </a>
-              <a href="tel:+71234567890" className="main-page-link04">
-                Контакты
-              </a>
-            </nav>
-            <a href="tel:+71234567890" className="main-page-link05">
-              <span>Связаться с нами:</span>
-              <br></br>
-              <span>+7 123 456 78 90</span>
-              <br></br>
-            </a>
-          </div>
-          <div data-thq="thq-burger-menu" className="main-page-burger-menu">
-            <svg viewBox="0 0 1024 1024" className="main-page-icon">
-              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-            </svg>
-          </div>
-          <div data-thq="thq-mobile-menu" className="main-page-mobile-menu">
-            <div className="main-page-nav">
-              <div className="main-page-top">
-                <span className="main-page-text04">VETRICO</span>
-                <div data-thq="thq-close-menu" className="main-page-close-menu">
-                  <svg viewBox="0 0 1024 1024" className="main-page-icon02">
-                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                  </svg>
-                </div>
-              </div>
-              <nav className="main-page-links1">
-                <a href="#catalog" className="main-page-link06">
-                  Каталог
-                </a>
-                <a href="#workshop" className="main-page-link07">
-                  Мастерская
-                </a>
-                <a href="#news" className="main-page-link08">
-                  Новости
-                </a>
-                <a href="tel:+71234567890" className="main-page-link09">
-                  Контакты
-                </a>
-              </nav>
-              <span className="main-page-text05">
-                <br></br>
-                <span className="main-page-text07">+7 123 456 78 90</span>
-                <br></br>
-              </span>
-            </div>
-          </div>
-        </header>
+        <NavbarInteractive></NavbarInteractive>
         <video
           src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
           loop="true"
@@ -84,7 +22,7 @@ const MainPage = (props) => {
           autoPlay="true"
           className="main-page-video"
         ></video>
-        <span className="main-page-text09">VETRICO</span>
+        <span className="main-page-text">VETRICO</span>
       </div>
       <div id="catalog" className="main-page-catalog">
         <div className="main-page-container1">
@@ -113,7 +51,7 @@ const MainPage = (props) => {
                 className="main-page-image"
               />
               <div className="main-page-container2">
-                <h1 className="main-page-text16">
+                <h1 className="main-page-text07">
                   <span>Фиалочки</span>
                   <br></br>
                   <br></br>
@@ -128,7 +66,7 @@ const MainPage = (props) => {
                 className="main-page-image1"
               />
               <div className="main-page-container3">
-                <h1 className="main-page-text20">
+                <h1 className="main-page-text11">
                   <span>Богатырь</span>
                   <br></br>
                 </h1>
@@ -136,7 +74,7 @@ const MainPage = (props) => {
             </div>
             <div className="main-page-right-element">
               <div className="main-page-container4">
-                <h1 className="main-page-text23">
+                <h1 className="main-page-text14">
                   <span>Сова</span>
                   <br></br>
                 </h1>
@@ -170,25 +108,25 @@ const MainPage = (props) => {
             src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
             className="main-page-image3"
           />
-          <span className="main-page-text32">
+          <span className="main-page-text23">
             © 2021 teleportHQ, All Rights Reserved.
           </span>
           <div className="main-page-icon-group">
             <svg
               viewBox="0 0 950.8571428571428 1024"
-              className="main-page-icon04"
+              className="main-page-icon"
             >
               <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
             </svg>
             <svg
               viewBox="0 0 877.7142857142857 1024"
-              className="main-page-icon06"
+              className="main-page-icon02"
             >
               <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
             </svg>
             <svg
               viewBox="0 0 602.2582857142856 1024"
-              className="main-page-icon08"
+              className="main-page-icon04"
             >
               <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
             </svg>
@@ -196,7 +134,7 @@ const MainPage = (props) => {
         </footer>
       </div>
       <div id="workshop" className="main-page-workshop">
-        <span className="main-page-text33">Мастерская</span>
+        <span className="main-page-text24">Мастерская</span>
         <form className="main-page-form">
           <input
             type="text"
@@ -216,20 +154,20 @@ const MainPage = (props) => {
           </button>
         </form>
         <div className="main-page-container6">
-          <span className="main-page-text37">
+          <span className="main-page-text28">
             <span>
               VETRICO реализует мозаику не только  по готовым шаблонам. 
             </span>
             <br></br>
           </span>
-          <span className="main-page-text40">
+          <span className="main-page-text31">
             <span>
               Наша команда создает индивидуальные мозаики по вашим эскизам и
               изображениям
             </span>
             <br></br>
           </span>
-          <span className="main-page-text43">
+          <span className="main-page-text34">
             <span>
               Если хотите создать мозаику по своему эскизу, оставьте заявку, и
               наша команда свяжется  с вами
@@ -239,39 +177,28 @@ const MainPage = (props) => {
         </div>
       </div>
       <div id="news" className="main-page-news">
-        <span className="main-page-text46">Новости</span>
+        <span className="main-page-text37">Новости</span>
         <div className="main-page-blog">
-          <div className="main-page-container7">
-            <BlogPostCard31 rootClassName="rootClassName1"></BlogPostCard31>
-          </div>
-          <div className="main-page-container8">
-            <BlogPostCard31
-              imageSrc="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fHdvcmt8ZW58MHx8fHwxNjI2NDUwNzky&amp;ixlib=rb-1.2.1&amp;h=1000"
-              rootClassName="rootClassName2"
-            ></BlogPostCard31>
-          </div>
-          <BlogPostCard31
-            imageSrc="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHx3b3JrJTIwb2ZmaWNlfGVufDB8fHx8MTYyNjQ1MDgzMQ&amp;ixlib=rb-1.2.1&amp;h=1000"
-            rootClassName="rootClassName"
-          ></BlogPostCard31>
+          <div className="main-page-container7"></div>
+          <div className="main-page-container8"></div>
         </div>
       </div>
       <footer className="main-page-footer1">
-        <span className="main-page-text47">VETRICO</span>
-        <span className="main-page-text48">
+        <span className="main-page-text38">VETRICO</span>
+        <span className="main-page-text39">
           © 2021 teleportHQ, All Rights Reserved.
         </span>
         <div className="main-page-icon-group1">
-          <svg viewBox="0 0 1024 1024" className="main-page-icon10">
+          <svg viewBox="0 0 1024 1024" className="main-page-icon06">
             <path d="M679.429 746.857l84-396c7.429-34.857-12.571-48.571-35.429-40l-493.714 190.286c-33.714 13.143-33.143 32-5.714 40.571l126.286 39.429 293.143-184.571c13.714-9.143 26.286-4 16 5.143l-237.143 214.286-9.143 130.286c13.143 0 18.857-5.714 25.714-12.571l61.714-59.429 128 94.286c23.429 13.143 40 6.286 46.286-21.714zM1024 512c0 282.857-229.143 512-512 512s-512-229.143-512-512 229.143-512 512-512 512 229.143 512 512z"></path>
           </svg>
           <svg
             viewBox="0 0 877.7142857142857 1024"
-            className="main-page-icon12"
+            className="main-page-icon08"
           >
             <path d="M562.857 556.571c9.714 0 102.857 48.571 106.857 55.429 1.143 2.857 1.143 6.286 1.143 8.571 0 14.286-4.571 30.286-9.714 43.429-13.143 32-66.286 52.571-98.857 52.571-27.429 0-84-24-108.571-35.429-81.714-37.143-132.571-100.571-181.714-173.143-21.714-32-41.143-71.429-40.571-110.857v-4.571c1.143-37.714 14.857-64.571 42.286-90.286 8.571-8 17.714-12.571 29.714-12.571 6.857 0 13.714 1.714 21.143 1.714 15.429 0 18.286 4.571 24 19.429 4 9.714 33.143 87.429 33.143 93.143 0 21.714-39.429 46.286-39.429 59.429 0 2.857 1.143 5.714 2.857 8.571 12.571 26.857 36.571 57.714 58.286 78.286 26.286 25.143 54.286 41.714 86.286 57.714 4 2.286 8 4 12.571 4 17.143 0 45.714-55.429 60.571-55.429zM446.857 859.429c197.714 0 358.857-161.143 358.857-358.857s-161.143-358.857-358.857-358.857-358.857 161.143-358.857 358.857c0 75.429 24 149.143 68.571 210.286l-45.143 133.143 138.286-44c58.286 38.286 127.429 59.429 197.143 59.429zM446.857 69.714c237.714 0 430.857 193.143 430.857 430.857s-193.143 430.857-430.857 430.857c-72.571 0-144.571-18.286-208.571-53.714l-238.286 76.571 77.714-231.429c-40.571-66.857-61.714-144-61.714-222.286 0-237.714 193.143-430.857 430.857-430.857z"></path>
           </svg>
-          <svg viewBox="0 0 1024 1024" className="main-page-icon14">
+          <svg viewBox="0 0 1024 1024" className="main-page-icon10">
             <path d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"></path>
           </svg>
         </div>
