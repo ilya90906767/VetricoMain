@@ -85,7 +85,7 @@
   background-color: var(--dl-color-gray-white);
 }
 .catalog-v22slider-slider-pagination-bullet1 {
-  background-color: white;
+  background-color: var(--dl-color-gray-white);
 }
 .catalog-v22slider-slider-pagination-bullet2 {
   background-color: var(--dl-color-gray-white);
@@ -225,6 +225,10 @@
   .catalog-v22slider-slider-slide3 {
     gap: var(--dl-space-space-unit);
     padding: 0px;
+  }
+  .catalog-v22slider-slider-pagination {
+    padding: var(--dl-space-space-unit);
+    position: static;
   }
   .catalog-v22slider-footer {
     left: 0px;

@@ -355,25 +355,25 @@
     font-size: 16px;
   }
   .mosaic-opv22-container3 {
-    gap: var(--dl-space-space-halfunit);
+    gap: var(--dl-space-space-twounits);
     align-items: center;
     justify-content: center;
   }
   .mosaic-opv22-image1 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .mosaic-opv22-image2 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .mosaic-opv22-image3 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .mosaic-opv22-image4 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .mosaic-opv22-footer {
     left: 0px;

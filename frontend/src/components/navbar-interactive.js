@@ -11,7 +11,10 @@ const NavbarInteractive = (props) => {
         data-thq="thq-navbar"
         className="navbar-interactive-navbar-interactive"
       >
-        <a href="#main" className="navbar-interactive-link">
+        <a
+          href="http://nanoscript-land.ru/"
+          className="navbar-interactive-link"
+        >
           {props.text}
         </a>
         <div
@@ -19,13 +22,22 @@ const NavbarInteractive = (props) => {
           className="navbar-interactive-desktop-menu"
         >
           <nav className="navbar-interactive-links">
-            <a href="#catalog" className="navbar-interactive-link01">
+            <a
+              href="http://nanoscript.ru/catalog"
+              className="navbar-interactive-link01"
+            >
               {props.text1}
             </a>
-            <a href="#workshop" className="navbar-interactive-link02">
+            <a
+              href="http://nanoscript-land.ru/"
+              className="navbar-interactive-link02"
+            >
               {props.text2}
             </a>
-            <a href="#news" className="navbar-interactive-link03">
+            <a
+              href="http://nanoscript-land.ru/"
+              className="navbar-interactive-link03"
+            >
               {props.text3}
             </a>
             <a href="tel:+71234567890" className="navbar-interactive-link04">
@@ -33,8 +45,6 @@ const NavbarInteractive = (props) => {
             </a>
           </nav>
           <a href="tel:+71234567890" className="navbar-interactive-link05">
-            <span className="">Связаться с нами:</span>
-            <br className=""></br>
             <span className="">+7 123 456 78 90</span>
             <br className=""></br>
           </a>
@@ -56,7 +66,7 @@ const NavbarInteractive = (props) => {
         >
           <div className="navbar-interactive-nav">
             <div className="navbar-interactive-top">
-              <span className="navbar-interactive-text4">{props.text5}</span>
+              <span className="navbar-interactive-text2">{props.text5}</span>
               <div
                 data-thq="thq-close-menu"
                 className="navbar-interactive-close-menu"
@@ -86,9 +96,9 @@ const NavbarInteractive = (props) => {
                 {props.text9}
               </a>
             </nav>
-            <span className="navbar-interactive-text5">
+            <span className="navbar-interactive-text3">
               <br className=""></br>
-              <span className="navbar-interactive-text7">+7 123 456 78 90</span>
+              <span className="navbar-interactive-text5">+7 123 456 78 90</span>
               <br className=""></br>
             </span>
           </div>

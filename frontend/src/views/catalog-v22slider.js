@@ -10,11 +10,8 @@ const CatalogV22slider = (props) => {
   return (
     <div className="catalog-v22slider-container">
       <Helmet>
-        <title>CatalogV22slider - Steep Lumpy Meerkat</title>
-        <meta
-          property="og:title"
-          content="CatalogV22slider - Steep Lumpy Meerkat"
-        />
+        <title>Steep Lumpy Meerkat</title>
+        <meta property="og:title" content="Steep Lumpy Meerkat" />
       </Helmet>
       <div className="catalog-v22slider-navbar">
         <NavbarInteractive rootClassName="navbar-interactive-root-class-name4"></NavbarInteractive>
