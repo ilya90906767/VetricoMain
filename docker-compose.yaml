@@ -35,6 +35,7 @@ services:
       - database
 
   react-app:
+  
     build:
       context: ./frontend
     volumes: 
