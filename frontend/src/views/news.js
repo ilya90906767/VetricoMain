@@ -8,8 +8,8 @@ const News = (props) => {
   return (
     <div className="news-container">
       <Helmet>
-        <title>News - Steep Lumpy Meerkat</title>
-        <meta property="og:title" content="News - Steep Lumpy Meerkat" />
+        <title>News - Vetrico</title>
+        <meta property="og:title" content="News - Vetrico" />
       </Helmet>
       <header data-thq="thq-navbar" className="news-navbar-interactive">
         <a href="#main" className="news-link">
@@ -80,7 +80,7 @@ const News = (props) => {
         />
         <img
           alt="image"
-          src="/mosaic/workshop-700h.jpg"
+          src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
           className="news-image3"
         />
         <img

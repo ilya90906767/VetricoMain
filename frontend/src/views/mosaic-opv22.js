@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -9,8 +10,8 @@ const MosaicOPV22 = (props) => {
   return (
     <div className="mosaic-opv22-container">
       <Helmet>
-        <title>MosaicOPV22 - Steep Lumpy Meerkat</title>
-        <meta property="og:title" content="MosaicOPV22 - Steep Lumpy Meerkat" />
+        <title>MosaicOPV22 - Vetrico</title>
+        <meta property="og:title" content="MosaicOPV22 - Vetrico" />
       </Helmet>
       <div className="mosaic-opv22-navbar">
         <NavbarInteractive rootClassName="navbar-interactive-root-class-name2"></NavbarInteractive>
@@ -23,6 +24,16 @@ const MosaicOPV22 = (props) => {
           className="mosaic-opv22-image"
         />
         <div className="mosaic-opv22-container2">
+          <Link to="/catalog" className="mosaic-opv22-navlink">
+            <svg
+              viewBox="0 0 1060.5714285714284 1024"
+              className="mosaic-opv22-icon"
+            >
+              <path d="M1024 457.143v109.714c0 10.286-8 18.286-18.286 18.286h-713.143v128c0 7.429-4 13.714-10.857 16.571s-14.286 1.714-20-2.857l-219.429-200c-3.429-3.429-5.714-8-5.714-13.143v0c0-5.143 2.286-10.286 5.714-13.714l219.429-202.286c5.714-5.143 13.143-6.286 20-3.429 6.286 2.857 10.857 9.143 10.857 16.571v128h713.143c10.286 0 18.286 8 18.286 18.286z"></path>
+            </svg>
+          </Link>
+        </div>
+        <div className="mosaic-opv22-container3">
           <h1 className="mosaic-opv22-text">
             <span className="mosaic-opv22-text1">Фиалки</span>
             <br></br>
@@ -35,7 +46,7 @@ const MosaicOPV22 = (props) => {
           </span>
         </div>
       </div>
-      <div className="mosaic-opv22-container3">
+      <div className="mosaic-opv22-container4">
         <img
           alt="image"
           src="/mosaic/mop1-700h.jpg"
@@ -59,7 +70,7 @@ const MosaicOPV22 = (props) => {
       </div>
       <footer className="mosaic-opv22-footer">
         <div className="mosaic-opv22-separator"></div>
-        <div className="mosaic-opv22-container4">
+        <div className="mosaic-opv22-container5">
           <span className="mosaic-opv22-text4">
             © 2024 VETRICO, All Rights Reserved.
           </span>

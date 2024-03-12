@@ -29,13 +29,17 @@ const NavbarInteractive = (props) => {
               {props.text1}
             </a>
             <a
-              href="http://nanoscript-land.ru/"
+              href="http://nanoscript-land.ru/#workshop"
+              target="_blank"
+              rel="noreferrer noopener"
               className="navbar-interactive-link02"
             >
               {props.text2}
             </a>
             <a
-              href="http://nanoscript-land.ru/"
+              href="http://nanoscript-land.ru/#news"
+              target="_blank"
+              rel="noreferrer noopener"
               className="navbar-interactive-link03"
             >
               {props.text3}
