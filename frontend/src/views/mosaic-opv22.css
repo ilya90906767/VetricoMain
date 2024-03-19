@@ -32,7 +32,6 @@
   align-items: center;
   background-size: cover;
   justify-content: center;
-  background-image: url("/mosaic/mop2-1500w.jpg");
 }
 .mosaic-opv22-image {
   top: var(--dl-space-space-sixunits);

@@ -30,9 +30,49 @@ const MosaicOPV22 = (props) => {
   
       fetchMosaics(backendUrl, title);
     }, []);
+    let  image2, image3, image4, image5;
+    if (oneMosaic.image2 != "None"){ image2 =
+      <img
+      alt="image"
+      src={oneMosaic.image2}
+      className="mosaic-opv22-image1"
+    />
+    }
+    else{image2=""}
+
+    if (oneMosaic.image3 != "None"){ image3 =
+      <img
+      alt="image"
+      src={oneMosaic.image3}
+      className="mosaic-opv22-image2"
+    />
+    }
+    else{image3=""}
+
+    if (oneMosaic.image4 != "None"){ image4 =
+      <img
+      alt="image"
+      src={oneMosaic.image4}
+      className="mosaic-opv22-image3"
+    />
+    }
+    else{image4=""}
+
+    if (oneMosaic.image5 != "None"){ image5 =
+      <img
+      alt="image"
+      src={oneMosaic.image5}
+      className="mosaic-opv22-image4"
+    />
+    }
+    else{image5=""}
+
   
   return (
     <div className="mosaic-opv22-container">
+            <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+</style>
       <Helmet>
         <title>{title} Vetrico</title>
         <meta property="og:title" content="MosaicOPV22 - Vetrico" />
@@ -41,7 +81,9 @@ const MosaicOPV22 = (props) => {
         <NavbarInteractive rootClassName="navbar-interactive-root-class-name2"></NavbarInteractive>
       </div>
       <div className="mosaic-opv22-phototext">
-        <div className="mosaic-opv22-container1"></div>
+        <div className="mosaic-opv22-container1" style={{
+        backgroundImage: `url(${oneMosaic.image})`
+      }}></div>
         <img
           alt="image"
           src={oneMosaic.image}
@@ -68,26 +110,10 @@ const MosaicOPV22 = (props) => {
         </div>
       </div>
       <div className="mosaic-opv22-container4">
-        <img
-          alt="image"
-          src={oneMosaic.image}
-          className="mosaic-opv22-image1"
-        />
-        <img
-          alt="image"
-          src={oneMosaic.image}
-          className="mosaic-opv22-image2"
-        />
-        <img
-          alt="image"
-          src={oneMosaic.image}
-          className="mosaic-opv22-image3"
-        />
-        <img
-          alt="image"
-          src={oneMosaic.image}
-          className="mosaic-opv22-image4"
-        />
+        {image2}
+        {image3}
+        {image4}
+        {image5}
       </div>
       <footer className="mosaic-opv22-footer">
         <div className="mosaic-opv22-separator"></div>

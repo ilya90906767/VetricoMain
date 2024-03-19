@@ -7,6 +7,9 @@ import './news.css'
 const News = (props) => {
   return (
     <div className="news-container">
+            <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+</style>
       <Helmet>
         <title>News - Vetrico</title>
         <meta property="og:title" content="News - Vetrico" />
