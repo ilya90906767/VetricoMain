@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import axios, { all } from 'axios';
 import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
 import { Helmet } from 'react-helmet'
 
@@ -7,10 +9,32 @@ import NavbarInteractive from '../components/navbar-interactive'
 import './mosaic-opv22.css'
 
 const MosaicOPV22 = (props) => {
+  const { title } = useParams();
+  console.log(title)
+
+  const [oneMosaic, setOneMosaic] = useState([]);
+  
+  useEffect(() => {
+    const fetchMosaics = async (backendUrl, title) => {
+      try {
+        const response = await axios.get(`${backendUrl}/api/public/onemosaic/${title}`);
+        setOneMosaic(response.data);
+        console.log(response.data);
+        console.log('Retrieve Mosaics from database');
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+      const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  
+      fetchMosaics(backendUrl, title);
+    }, []);
+  
   return (
     <div className="mosaic-opv22-container">
       <Helmet>
-        <title>MosaicOPV22 - Vetrico</title>
+        <title>{title} Vetrico</title>
         <meta property="og:title" content="MosaicOPV22 - Vetrico" />
       </Helmet>
       <div className="mosaic-opv22-navbar">
@@ -20,7 +44,7 @@ const MosaicOPV22 = (props) => {
         <div className="mosaic-opv22-container1"></div>
         <img
           alt="image"
-          src="/mosaic/%C3%B1%C2%84%C3%B0%C2%B8%C3%B0%C2%B0%C3%B0%C2%BB%C3%B0%C2%BA%C3%B0%C2%B8-1200w.jpg"
+          src={oneMosaic.image}
           className="mosaic-opv22-image"
         />
         <div className="mosaic-opv22-container2">
@@ -35,36 +59,33 @@ const MosaicOPV22 = (props) => {
         </div>
         <div className="mosaic-opv22-container3">
           <h1 className="mosaic-opv22-text">
-            <span className="mosaic-opv22-text1">Фиалки</span>
+            <span className="mosaic-opv22-text1">{title}</span>
             <br></br>
           </h1>
           <span className="mosaic-opv22-text3">
-            Мир русской мифологии богат на удивительные истории, героев и
-            сказания. Одним из самых популярных образов являются богатыри -
-            сильные и отважные воины, защитники Руси. Их подвиги и приключения
-            вдохновляли многих на протяжении веков
+            {oneMosaic.description}
           </span>
         </div>
       </div>
       <div className="mosaic-opv22-container4">
         <img
           alt="image"
-          src="/mosaic/mop1-700h.jpg"
+          src={oneMosaic.image}
           className="mosaic-opv22-image1"
         />
         <img
           alt="image"
-          src="/mosaic/mop2-1500w.jpg"
+          src={oneMosaic.image}
           className="mosaic-opv22-image2"
         />
         <img
           alt="image"
-          src="/mosaic/%C3%B0%C2%94%C3%B0%C2%BE%C3%B0%C2%B1%C3%B1%C2%80%C3%B1%C2%8B%C3%B0%C2%BD%C3%B1%C2%8F-700h.jpg"
+          src={oneMosaic.image}
           className="mosaic-opv22-image3"
         />
         <img
           alt="image"
-          src="/mosaic/mop11-700h.jpg"
+          src={oneMosaic.image}
           className="mosaic-opv22-image4"
         />
       </div>

@@ -21,6 +21,7 @@
   color: var(--dl-color-gray-white);
   font-size: 20px;
   font-style: normal;
+  font-family: "Montserrat";
   font-weight: 700;
   text-decoration: none;
 }
@@ -39,23 +40,27 @@
 .navbar-interactive-link01 {
   color: var(--dl-color-gray-white);
   font-size: 18px;
+  font-family: "Montserrat";
   text-decoration: none;
 }
 .navbar-interactive-link02 {
   color: var(--dl-color-gray-white);
   font-size: 18px;
+  font-family: "Montserrat";
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
 .navbar-interactive-link03 {
   color: var(--dl-color-gray-white);
   font-size: 18px;
+  font-family: "Montserrat";
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
 .navbar-interactive-link04 {
   color: var(--dl-color-gray-white);
   font-size: 18px;
+  font-family: "Montserrat";
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }

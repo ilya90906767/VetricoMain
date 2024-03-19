@@ -12,6 +12,10 @@ RUN apt-get update && \
 
 WORKDIR /usr/src/app
 
+RUN mkdir /usr/src/app/staticfiles
+RUN mkdir /usr/src/app/staticfiles/admin 
+RUN mkdir /usr/src/app/staticfiles/rest_framework
+
 COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt

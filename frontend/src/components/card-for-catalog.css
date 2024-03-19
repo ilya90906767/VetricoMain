@@ -7,8 +7,9 @@
   flex-direction: column;
   background-size: cover;
   text-decoration: none;
-  background-image: url("/mosaic/%C3%B1%C2%84%C3%B0%C2%B8%C3%B0%C2%B0%C3%B0%C2%BB%C3%B0%C2%BA%C3%B0%C2%B8-400w.jpg");
 }
+
+
 .card-for-catalog-text {
   color: rgba(255, 255, 255, 0);
   width: 100%;
@@ -16,7 +17,7 @@
   font-size: 48px;
   text-align: center;
   transition: 0.3s;
-  padding-top: 201px;
+  padding-top: 50%;
   padding-left: 0%;
   padding-right: 0%;
   padding-bottom: 0%;
@@ -151,7 +152,7 @@
     height: 200px;
   }
   .card-for-catalog-text {
-    font-size: 20px;
+    font-size: 1.5rem;
     padding-top: var(--dl-space-space-halfunit);
   }
 }
