@@ -19,6 +19,39 @@ SECRET_KEY = 'django-insecure-75ke@xjq0%9%#=u89tjix=!h_t2fa8onxm7z90%acvewge27c7
 DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS').split(' ')
+
+CORS_ALLOW_HEADERS = (
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+    "x-user-agent",
+)
+
+CORS_ALLOW_METHODS = ("DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT")
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost',
+    'http://localhost:3000',
+    'http://nanoscript:3000'
+    'http://nanoscript'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost',
+    'http://localhost:3000',
+    'http://nanoscript:3000'
+    'http://nanoscript'
+]
+
+CORS_ALLOW_HEADERS = ["origin"]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
+
 CONTACT_EMAIL_ADDRESS = env('CONTACT_EMAIL_ADDRESS')
 
 # Application definition
