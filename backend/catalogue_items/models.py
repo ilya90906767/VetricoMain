@@ -4,6 +4,7 @@ class Mosaic(models.Model):
     articul = models.TextField()
     title = models.TextField()
     description = models.TextField()
+    categoru = models.TextField() # 1-Прошлые работы
     image = models.TextField()
     image2 = models.TextField()
     image3 = models.TextField()

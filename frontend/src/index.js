@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={CatalogV22} exact path="/catalog" />
+        <Route component={CatalogV22} exact path="/catalog/:subcategory" />
         <Route component={News} exact path="/news" />
         <Route component={MosaicOPV22} path="/mosaic/:title" />
         <Route component={NotFound} path="**" />

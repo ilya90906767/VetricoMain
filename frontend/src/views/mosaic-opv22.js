@@ -89,16 +89,6 @@ const MosaicOPV22 = (props) => {
           src={oneMosaic.image}
           className="mosaic-opv22-image"
         />
-        <div className="mosaic-opv22-container2">
-          <Link to="/catalog" className="mosaic-opv22-navlink">
-            <svg
-              viewBox="0 0 1060.5714285714284 1024"
-              className="mosaic-opv22-icon"
-            >
-              <path d="M1024 457.143v109.714c0 10.286-8 18.286-18.286 18.286h-713.143v128c0 7.429-4 13.714-10.857 16.571s-14.286 1.714-20-2.857l-219.429-200c-3.429-3.429-5.714-8-5.714-13.143v0c0-5.143 2.286-10.286 5.714-13.714l219.429-202.286c5.714-5.143 13.143-6.286 20-3.429 6.286 2.857 10.857 9.143 10.857 16.571v128h713.143c10.286 0 18.286 8 18.286 18.286z"></path>
-            </svg>
-          </Link>
-        </div>
         <div className="mosaic-opv22-container3">
           <h1 className="mosaic-opv22-text">
             <span className="mosaic-opv22-text1">{title}</span>

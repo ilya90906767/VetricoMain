@@ -6,9 +6,11 @@ import { Helmet } from 'react-helmet'
 import NavbarInteractive from '../components/navbar-interactive'
 import CardForCatalog from '../components/card-for-catalog'
 import './catalog-v22.css'
+import { useParams } from 'react-router-dom';
 
 const CatalogV22 = (props) => {
-
+  const {subcategory} = useParams();
+  
 
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(6);
@@ -31,11 +33,14 @@ const CatalogV22 = (props) => {
   };
 
   useEffect(() => {
-    const fetchMosaics = async (backendUrl) => {
+
+    const fetchMosaics = async (backendUrl, subcategory) => {
       try {
         const response = await axios.get(`${backendUrl}/api/public/mosaics/`);
-        setAllMosaics(response.data);
-        console.log(response.data);
+        const filteredMosaics = response.data.filter(mosaic => mosaic.subcategory === subcategory);
+        setAllMosaics(filteredMosaics);
+        console.log(filteredMosaics);
+        console.log(subcategory);
         console.log('Retrieve Mosaics from database');
       } catch (error) {
         console.error(error);
