@@ -58,12 +58,22 @@ services:
       - ./nginx/nginx-setup.conf:/etc/nginx/conf.d/default.conf:ro
       - react_build:/var/www/react
       - static:/var/www/static
-      - media:/var/www/media 
+      - media:/var/www/media
+      - tildabuild:/var/www/tilda 
     depends_on:
       - backend
       - react-app
+
+
+  tilda:
+        build:
+                context: ./Tilda
+        volumes:
+                - tildabuild:/usr/src/tildabuild
+               
 volumes: 
   react_build:
   static:
   media:
   postgres_data:
+  tildabuild:

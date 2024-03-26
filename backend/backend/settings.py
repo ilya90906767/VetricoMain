@@ -101,8 +101,8 @@ TEMPLATES = [
 CORS_ORIGIN_WHITELIST = [
     'http://localhost',
     'http://localhost:3000',
-    'https://coralfuture.org',
-    'https://coralfuture.org:3000',
+    'http://nanoscript.ru',
+    'http://nanoscript.ru:3000',
 ]
 CORS_ALLOW_CREDENTIALS = True
 WSGI_APPLICATION = 'backend.wsgi.application'
