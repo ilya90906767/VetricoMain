@@ -12,7 +12,7 @@ const NavbarInteractive = (props) => {
         className="navbar-interactive-navbar-interactive"
       >
         <a
-          href="http://nanoscript-land.ru/"
+          href="http://land.nanoscript.ru/"
           className="navbar-interactive-link"
         >
           {props.text}
@@ -23,13 +23,13 @@ const NavbarInteractive = (props) => {
         >
           <nav className="navbar-interactive-links">
             <a
-              href="http://nanoscript.ru/catalog"
+              href="http://nanoscript.ru/catalog/1"
               className="navbar-interactive-link01"
             >
               {props.text1}
             </a>
             <a
-              href="http://nanoscript-land.ru/#workshop"
+              href="http://land.nanoscript.ru/#company"
               target="_blank"
               rel="noreferrer noopener"
               className="navbar-interactive-link02"
@@ -37,7 +37,7 @@ const NavbarInteractive = (props) => {
               {props.text2}
             </a>
             <a
-              href="http://nanoscript-land.ru/#news"
+              href="http://land.nanoscript.ru/#partners"
               target="_blank"
               rel="noreferrer noopener"
               className="navbar-interactive-link03"
@@ -113,12 +113,12 @@ const NavbarInteractive = (props) => {
 }
 
 NavbarInteractive.defaultProps = {
-  text7: 'Мастерская',
+  text7: 'О компании',
   text1: 'Каталог',
   text9: 'Контакты',
-  text2: 'Мастерская',
-  text3: 'Новости',
-  text8: 'Новости',
+  text2: 'О компании',
+  text3: 'Партнеры ',
+  text8: 'Партнеры',
   text: 'VETRICO',
   rootClassName: '',
   text5: 'VETRICO',

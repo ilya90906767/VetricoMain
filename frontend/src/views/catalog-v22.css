@@ -243,6 +243,9 @@
   }
 }
 @media(max-width: 479px) {
+  .catalog-v22-text {
+    font-size: 68px;
+  }
   .catalog-v22-container2 {
     gap: var(--dl-space-space-oneandhalfunits);
   }
